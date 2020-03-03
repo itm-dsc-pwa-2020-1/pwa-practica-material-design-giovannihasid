@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="web, internet"> <!--Palabras clave-->
+	<meta name="description" content="CSS Grid Practica 4">
+	<meta name="author" content="Giovanni Hasid Martinez">
+	<link rel="icon" type="image/jpg" href="img/nike-icon.ico">
+	<!-- 16px x 16px -->
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="stylesheet" type="text/css" href="media_query.css">
+
+	<link rel="stylesheet" href="material/material.min.css">
+	<script src="material/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<title>Practica 6</title>
+</head>
+<body>
+	<div class="contenedor">
+		<div class="encabezado">
+					<header>
+			<section class="header-border">
+				<div class="header-left">
+					<a href="#">NikePlus</a>
+					<a href="#"><img src="img/basket.svg" alt="" class="icon-img"></a>
+					<div id="tt1" class="icon material-icons">add</div>
+<div class="mdl-tooltip" data-mdl-for="tt1">
+Follow
+</div>
+<!-- Large Tooltip -->
+<div id="tt2" class="icon material-icons">print</div>
+<div class="mdl-tooltip mdl-tooltip--large" for="tt2">
+Print
+</div>
+				</div>
+				<div class="header-right">
+					<a href="#">Ayuda</a>
+					<a href="#">Mexico</a>
+					<div id="tt3" class="icon material-icons">cloud_upload</div>
+<div class="mdl-tooltip" data-mdl-for="tt3">
+Upload <strong>file.zip</strong>
+</div>
+<!-- Multiline Tooltip -->
+<div id="tt4" class="icon material-icons">share</div>
+<div class="mdl-tooltip" for="tt4">
+Share your content<br>via social media
+</div>	
+				</div>
+
+			</section>
+			<nav class="navegacion">
+				<div class="logo">
+					<img src="img/nike-logo.jpg" alt="">
+				</div>
+				<div class="enlaces">
+							<a href="#">NUEVOS LANZAMIENTOS</a>
+							<a href="#">HOMBRES</a>
+							<a href="#">MUJERES</a>
+							<a href="#">NIÑOS</a>
+							<a href="#">PERSONALIZAR</a>
+							<a href="#">COLECCIONES</a>
+							<a href="#">LIQUIDACIÓN</a>
+				</div>
+			</nav>
+		</header>
+
+<!-- Simple MDL Progress Bar -->
+
+
+		</div>
+			<div class="anuncio">
+				<p>Nuestros ultimos y mejores diseños en tu bandeja de entrada</p>
+			</div>
+		<section class="seccion">
+			<!-- Wide card with share menu button -->
+<style>
+.demo-card-wide.mdl-card {
+  width: 512px;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('img/destacados.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+</style>		<header class="mdc-top-app-bar">
+  <div class="mdc-top-app-bar__row">
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+      <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+      <span class="mdc-top-app-bar__title">Title</span>
+    </section>
+  </div>
+
+<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Welcome</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Mauris sagittis pellentesque lacus eleifend lacinia...
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Get Started
+    </a>
+  </div>
+  <div class="mdl-card__menu">
+    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">share</i>
+    </button>
+  </div>
+</div>
+
+		<div class="material">
+
+			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  			Button
+			</button>
+			<!-- Colored FAB button -->
+			<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+			  <i class="material-icons">add</i>
+			</button>
+			<!-- Wide card with share menu button -->
+
+		</div>
+
+<!-- Default Slider -->
+<input class="mdl-slider mdl-js-slider" type="range"
+  min="0" max="100" value="0" tabindex="0">
+<!-- Slider with Starting Value -->
+<input class="mdl-slider mdl-js-slider" type="range"
+  min="0" max="100" value="25" tabindex="0">
+
+				<h3>Tendencia</h3>
+			<div class="tendencia">
+				<img src="img/tendencia1.jpg" alt="" class="tendencia-img1">
+				<img src="img/tendencia2.jpg" alt="" class="tendencia-img2">
+			</div>
+			<button id="demo-show-snackbar" class="mdl-button mdl-js-button mdl-button--raised" type="button">Show Snackbar</button>
+
+
+<!-- button-->			
+<div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
+  <div class="mdl-snackbar__text"></div>
+  <button class="mdl-snackbar__action" type="button"></button>
+</div>
+<script>
+(function() {
+  'use strict';
+  var snackbarContainer = document.querySelector('#demo-snackbar-example');
+  var showSnackbarButton = document.querySelector('#demo-show-snackbar');
+  var handler = function(event) {
+    showSnackbarButton.style.backgroundColor = '';
+  };
+  showSnackbarButton.addEventListener('click', function() {
+    'use strict';
+    showSnackbarButton.style.backgroundColor = '#' +
+        Math.floor(Math.random() * 0xFFFFFF).toString(16);
+    var data = {
+      message: 'Button color changed.',
+      timeout: 2000,
+      actionHandler: handler,
+      actionText: 'Undo'
+    };
+    snackbarContainer.MaterialSnackbar.showSnackbar(data);
+  });
+}());
+</script>
+
+
+		</section>
+			<div class="more">
+				<h3>Más Nike</h3>
+				<div class="img-more">
+					<img src="img/man.jpg" alt="" class="more1">
+					<img src="img/woman.jpg" alt="" class="more2">
+					<img src="img/boy.jpg" alt="" class="more3">
+				</div>
+			</div>
+	<!-- MDL Progress Bar with Indeterminate Progress -->
+<div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+
+		<footer class="pie">
+			<div class="pie-izq">
+				<p>© 2020 Nike, Inc. Todos los derechos reservado</p>
+			</div>
+			<div class="pie-der">
+				<img src="img/redes.png" alt="">
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
